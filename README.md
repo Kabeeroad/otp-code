@@ -9,29 +9,29 @@ Optional support for customizable email templates.
 API Endpoints
 1. Creating an OTP (POST Request)
 
-Endpoint: `/api/otp`
-Data (JSON):
-JSON
+Endpoint: `/api/otp` <br>
+Data (JSON):<br>
+JSON<br>
 `{
   "time": 5,  // OTP expiry time in minutes
   "email": "abx@gmail.com",
   "template": "your_custom_template" // Optional 
 }`
-
-Response (JSON):
-JSON
+<br>
+Response (JSON):<br>
+JSON <br>
 `{
   "token": "your_generated_token"
 }`
 
 2. Verifying an OTP (GET Request)
 
-Endpoint: `/api/otp/verify`
-Query Parameters:
-code: The OTP code entered by the user.
-token: The token returned when the OTP was generated.
+Endpoint: `/api/otp/verify` <br>
+Query Parameters: <br>
+code: The OTP code entered by the user. <br>
+token: The token returned when the OTP was generated. <br>
 Response (JSON):
-JSON
+JSON <br>
 `{
   "status": "success" // or "failure"
 }`
