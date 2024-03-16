@@ -7,31 +7,31 @@ Sends OTP codes via email.
 Provides secure token-based OTP verification.
 Optional support for customizable email templates.
 API Endpoints
-# 1. Creating an OTP (POST Request)
+1. Creating an OTP (POST Request)
 
-Endpoint: /api/otp
+Endpoint: `/api/otp`
 Data (JSON):
 JSON
-{
+`{
   "time": 5,  // OTP expiry time in minutes
   "email": "abx@gmail.com",
   "template": "your_custom_template" // Optional 
-}
+}`
 
 Response (JSON):
 JSON
-{
+`{
   "token": "your_generated_token"
-}
+}`
 
-# 2. Verifying an OTP (GET Request)
+2. Verifying an OTP (GET Request)
 
-Endpoint: /api/otp/verify
+Endpoint: `/api/otp/verify`
 Query Parameters:
 code: The OTP code entered by the user.
 token: The token returned when the OTP was generated.
 Response (JSON):
 JSON
-{
+`{
   "status": "success" // or "failure"
-}
+}`
