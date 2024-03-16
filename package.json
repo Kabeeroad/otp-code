@@ -1,0 +1,27 @@
+{
+  "name": "otp-code-api",
+  "version": "1.0.0",
+  "description": "A simple and secure REST API-based OTP (One-Time Passcode) platform built with Node.js and Express.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/shaikhcoder/otp-code.git"
+  },
+  "author": "ahtisham",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/shaikhcoder/otp-code/issues"
+  },
+  "homepage": "https://github.com/shaikhcoder/otp-code#readme",
+  "dependencies": {
+    "express": "^4.18.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
